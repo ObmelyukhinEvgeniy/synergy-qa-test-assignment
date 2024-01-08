@@ -7,6 +7,7 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.hamcrest.Matchers;
 
 public class Specifications {
     public static RequestSpecification requestSpecification(String baseURL) {
@@ -22,6 +23,16 @@ public class Specifications {
                 .log(LogDetail.ALL)
                 .expectStatusCode(200)
                 .expectContentType(ContentType.JSON)
+                .build();
+    }
+
+    public static ResponseSpecification responseSpecificationAssert() {
+        return new ResponseSpecBuilder()
+                .expectBody("data.id", Matchers.equalTo(2))
+                .expectBody("data.email", Matchers.equalTo("janet.weaver@reqres.in"))
+                .expectBody("data.first_name", Matchers.equalTo("Janet"))
+                .expectBody("data.last_name", Matchers.equalTo("Weaver"))
+                .expectBody("data.avatar", Matchers.equalTo("https://reqres.in/img/faces/2-image.jpg"))
                 .build();
     }
 

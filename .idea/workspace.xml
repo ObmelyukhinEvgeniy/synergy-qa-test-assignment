@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5931896-dcd1-48b0-80d0-af75e6eec702" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b5931896-dcd1-48b0-80d0-af75e6eec702" name="Changes" comment="Next 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api_1/PojoClassBaseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_1/PojoClassBaseData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api_1/SingleUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_1/SingleUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api_1/Specifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_1/Specifications.java" afterDir="false" />
     </list>
@@ -45,25 +41,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.SingleUserTest.checkCode200Test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.SingleUserTest.checkCode200Test.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SingleUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SingleUserTest.getUserSingle2Test.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SingleUserTest.getUserSingle404Test.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SingleUserTest.getUserSingleError404Test.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SingleUserTest.request200OkTest.executor&quot;: &quot;Run&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.SingleUserTest.checkCode200Test.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.SingleUserTest.checkCode200Test.executor": "Run",
+    "TestNG.SingleUserTest.executor": "Run",
+    "TestNG.SingleUserTest.getUserSingle2Test.executor": "Run",
+    "TestNG.SingleUserTest.getUserSingle404Test.executor": "Run",
+    "TestNG.SingleUserTest.getUserSingleError404Test.executor": "Run",
+    "TestNG.SingleUserTest.getUserSingleOK200Test.executor": "Run",
+    "TestNG.SingleUserTest.request200OkTest.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.SingleUserTest.getUserSingleError404Test">
+}]]></component>
+  <component name="RunManager" selected="TestNG.SingleUserTest">
     <configuration name="SingleUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="synergy-qa-test-assignment" />
       <extension name="coverage">
@@ -92,24 +89,6 @@
       <option name="PACKAGE_NAME" value="api_1" />
       <option name="MAIN_CLASS_NAME" value="api_1.SingleUserTest" />
       <option name="METHOD_NAME" value="checkCode200Test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingleUserTest.getUserSingle2Test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="synergy-qa-test-assignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api_1" />
-      <option name="MAIN_CLASS_NAME" value="api_1.SingleUserTest" />
-      <option name="METHOD_NAME" value="getUserSingle2Test" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -153,13 +132,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SingleUserTest.getUserSingleOK200Test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="synergy-qa-test-assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api_1" />
+      <option name="MAIN_CLASS_NAME" value="api_1.SingleUserTest" />
+      <option name="METHOD_NAME" value="getUserSingleOK200Test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SingleUserTest.getUserSingleError404Test" />
         <item itemvalue="TestNG.SingleUserTest" />
+        <item itemvalue="TestNG.SingleUserTest.getUserSingleError404Test" />
+        <item itemvalue="TestNG.SingleUserTest.getUserSingleOK200Test" />
         <item itemvalue="TestNG.SingleUserTest.checkCode200Test" />
         <item itemvalue="TestNG.SingleUserTest.getUserSingle404Test" />
-        <item itemvalue="TestNG.SingleUserTest.getUserSingle2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -182,9 +179,31 @@
       <option name="presentableId" value="Default" />
       <updated>1704201613767</updated>
     </task>
+    <task id="LOCAL-00001" summary="Next 1">
+      <option name="closed" value="true" />
+      <created>1704704380969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704704380969</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Next 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Next 1" />
   </component>
 </project>

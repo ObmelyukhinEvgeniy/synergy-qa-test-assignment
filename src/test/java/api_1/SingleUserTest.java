@@ -19,18 +19,25 @@ import static org.hamcrest.Matchers.equalTo;
 public class SingleUserTest {
     @Test(description = "Check 200 OK", priority = 0)
     public void getUserSingleOK200Test() {
-        Specifications.installSpecification(Specifications.requestSpecification("https://reqres.in"), Specifications.responseSpecificationOK200());
+        //Specifications.installSpecification(Specifications.requestSpecification("https://reqres.in"), Specifications.responseSpecificationOK200());
             given()
                     .spec(Specifications.requestSpecification("https://reqres.in"))
             .when()
                     .get("/api/users/2")
             .then()
                     .spec(Specifications.responseSpecificationOK200())
-                    .assertThat()
-                    .body("data.id", equalTo(2));
+                    .spec(Specifications.responseSpecificationAssert());
+                    //.assertThat()
+                    //.body("data.id", equalTo(2));
 
-//        Assert.assertEquals(response.getStatusCode(), 200);
-//        Assert.assertEquals(response.jsonPath().getInt("data.id"), 2);
+        //Assert.assertEquals(response.getStatusCode(), 200);
+
+        //Assert.assertEquals(response.jsonPath().getInt("data.id"), 2);
+//        Assert.assertEquals(response.jsonPath().getString("data.email"), "janet.weaver@reqres.in");
+//        Assert.assertEquals(response.jsonPath().getString("data.first_name"), "Janet");
+//        Assert.assertEquals(response.jsonPath().getString("data.last_name"), "Weaver");
+        //Assert.assertEquals(response.jsonPath().getString("data.avatar"), "https://reqres.in/img/faces/2-image.jpg");
+
     }
     @Test(description = "Check 404 Not Found", priority = 1)
     public void getUserSingleError404Test() {
